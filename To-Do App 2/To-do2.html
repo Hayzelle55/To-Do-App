@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = stylesheet href ="To-do2.css">
+    <title>Star To-Do App</title>
+</head>
+<body>
+    <h1>Welcome to Stars' To-Do App</h>
+		<section id ="Homepage">
+	<main class="app">
+		<section class="greeting">
+			<h2 class="title">
+				Hello, <input type="text" id="name" placeholder="Name here" />
+			</h2>
+
+	
+		<section id = "List" class="todo-list">
+			<h3>MY LIST</h3>
+			<div class="list" id="todo-list"></div>
+		</section>
+		</section>
+		
+
+		<hr></hr>
+
+
+		<section id ="To-do" class ="create-todo">
+			<h3>CREATE A TODO</h3>
+			<form id="new-todo-form">
+				<h4>What's on your todo?</h4>
+				<input 
+					type="text" 
+					placeholder="e.g. Finish a book"
+					name="content"
+					id="content" />
+				
+				<h4>Pick a category</h4>
+				<div class="options">
+					<label>
+						<input type="radio" name="category" id="category1" value="personal" />
+						<span class="bubble personal"></span>
+						<div>Personal</div>
+					</label>
+					<label>
+						<input type="radio" name="category" id="category2" value="business" /> 
+						<span class="bubble business"></span>
+						<div>Business</div>
+					</label>
+					<label>
+						<input type="radio" name="category" id="category3" value="school" />
+						<span class="bubble school"></span>
+						<div>School</div>
+					</label>
+					<label>
+						<input type="radio" name="category" id="category4" value="health" />
+						<span class="bubble health"></span>
+						<div>Health</div>
+					</label>
+				</div>
+                    <input type="submit" value="Add task" /><br>
+			</form>
+			<form method ="get" action ="#List">
+				<button><input type ="submit" value ="See List"></button>
+				</form> <br>
+				<form method ="get" action ="#Homepage">
+					<button><input type ="submit" value ="previous page"></button>
+					</form> 
+		</section>
+		<hr></hr>
+
+
+	</main>
+    
+    <script src ="dist/To-do2.js"></script>
+</body>
+</html>
